@@ -13,7 +13,6 @@ with open("1.json",'r') as load_f:
     #print(load_dict)
     
     global content
-    global each_content
 
     for key,value in load_dict.items():
         if key == "date":
@@ -30,7 +29,7 @@ with open("1.json",'r') as load_f:
                continue
             for key,value in key.items():
                 #print type(key),otype(value)
-                print key,value
+                print key
         
 
 
