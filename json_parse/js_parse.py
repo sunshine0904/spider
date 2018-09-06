@@ -4,8 +4,7 @@
 #import simplejson as json
 import json
 
-with open("1.json",'r') as load_f:
-    print type(load_f)
+with open("../2018-2-10-daily.json",'r') as load_f:
     parse_json = json.load(load_f)
     #print parse_json
     all_msgs=parse_json['msgs']
@@ -14,6 +13,5 @@ with open("1.json",'r') as load_f:
     for key in all_msgs:
         #print type(key),key
         #print key['id'],":",key['loginname'],
-        print "[",key['realname'],"]",":",key['msg']
-        print "\r\n"
+        print "[",key['realname'],"]",":",key['msg'],"\r\n"
 
